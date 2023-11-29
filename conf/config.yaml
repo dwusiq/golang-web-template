@@ -1,0 +1,36 @@
+server:
+  http_port: 8080
+  run_mode: release  # debug release test
+  file_dir: ./data
+  node_url: "192.168.0.110:8332" #https://arb1.arbitrum.io/rpc  
+  node_mode: dev
+  node_user: "12345"
+  node_pwd: "12345"
+  start_height: 808545
+  nft_height: 1
+  force_rollback: 0
+  chain_mode: 2   # 0-EVM 1-TRX 2-BTC
+
+mysql:
+  - name: default
+    ip: 127.0.0.1
+    port: 3306
+    db: blackList
+    user: root
+    password: 123456
+    debug: true
+  
+
+contract:
+  arc_token: 0x187aF63200847D16B1DF23CAAb6aD1dE6e2457A6
+
+level:
+  chain_id: 
+
+server_url:
+  red_packet_share_url:
+  java_http_dev_url:
+  java_http_url:
+  java_web_socket_url:
+  get_txs_list_url:
+
